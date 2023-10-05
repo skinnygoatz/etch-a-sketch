@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>The Drawing Board</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <h1 class="title">Etch-A-Sketch</h1>
+
+    <div class="content">
+
+      <div class="board"></div>
+
+      <div class="buttons">
+        <input type="color" id="btnPickColor">
+        <button class="btnColor">Color</button>
+        <button class="btnRainbow">Rainbow</button>
+        <button class="btnEraser">Eraser</button>
+        <button class="btnClear">Clear</button>
+      </div>
+
+    </div>
+        
+    <p class="scaleNumbers"><span class="width">16</span> x <span class="height">16</span></p>
+    <input type="range" id="sliderScale" min="1" max="64" value="16" onchange="boardSize(this.value)">
+
+    <script src="script.js" defer></script>
+  </body>
+
+</html>
